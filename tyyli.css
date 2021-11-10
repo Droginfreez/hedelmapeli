@@ -60,7 +60,7 @@
    
 }
 
-.banaani-kuva, .omena-kuva, .paaryna-kuva, .vesimelooni-kuva, .timantti-kuva {
+.mansikka-kuva, .omena-kuva, .kirsikka-kuva, .banaani-kuva, .seiska-kuva {
   float: left;
   width: 3%;
   padding: 2px;
@@ -68,14 +68,14 @@
 
 
 
-.banaanit, .omenat, .paarynat, .vesimeloonit, .timantit{
+.mansikat, .omenat, .kirsikat, .banaanit, .seiskat{
     width: 1500px;
    content: "";
    clear: both;
    display: table;
 }
 
-.timanttiKuva, .vesimelooniKuva, .paarynaKuva, .omenaKuva, .banaaniKuva{
+.seiskaKuva, .banaaniKuva, .kirsikkaKuva, .omenaKuva, .mansikkaKuva{
     width: 100%;
     height: 50px;
 }

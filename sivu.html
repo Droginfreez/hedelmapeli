@@ -1,41 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ISO 8859-10">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tyyli.css">
-    <link rel="stylesheet" href="mobiili.css">
 </head>
 <body onload="paivitaKaikki()">
-    <script src="script.js"></script>
+    <script src="peli.js"></script>
 
 
 
     <section class="rahanakyma">
         <div class="rahat">
-         <div id="rahaa">100?</div>
-         <div id="panos">1?</div>
+         <div id="rahaa"></div>
+         <div id="panos"></div>
         </div>
     </section>
  
     <section class="hedelma-ruudut">
  
         <div class="hedelma-ruutu" >
-            <img id="hedelma1" class ="hedelma" src="seiska.png" alt="hedelma">
-            <div id="lukittu-painike-1" class="lukittu-painike-1" onclick="toggle1()">Ei lukittu</div>
+            <img id="hedelma1" class ="hedelma" src="img/seiska.png" alt="hedelma">
          </div>
  
         <div class="hedelma-ruutu">
-            <img id="hedelma2" class ="hedelma" src="seiska.png" alt="hedelma">
-            <div id="lukittu-painike-2"  class="lukittu-painike-2" onclick="toggle2()">Ei lukittu</div>
+            <img id="hedelma2" class ="hedelma" src="img/seiska.png" alt="hedelma">
          </div>
  
         <div class="hedelma-ruutu">
-            <img id="hedelma3" class ="hedelma" src="seiska.png" alt="hedelma">
-            <div id="lukittu-painike-3" class="lukittu-painike-3" onclick="toggle3()">Ei lukittu</div>
+            <img id="hedelma3" class ="hedelma" src="img/seiska.png" alt="hedelma">
          </div>
     </section>
  
+
+    <section class="nappulat">
+            <input type="button" class="nappula" value="Pelaa" onclick="pelaa()"><br>
+            <input type="button" class="nappula" value="isompi panos" onclick="vaihdaPanos()">
+            <input type="button" class="nappula" value="pienempi panos" onclick="vaihdaPanosPienemmaksi()">
+    </section>
+
+    
+    <section class="voitto-taulukko">
+      <div class="voitto-otsikko">Mahdolliset voitot</div>
+            <div class="mansikat">
+                <div class="mansikka-kuva">
+                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+                  </div>
+                  <div class="mansikka-kuva">
+                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+                  </div>
+                  <div class="mansikka-kuva">
+                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+                  </div> 
+                  <div class="voittokerroin" id="mansikat-voitto"></div>
+            </div>
+                  
+                 
+            
+
+            <div class="omenat">
+                <div class="omena-kuva">
+                    <img src="img/omppu.jpg" alt="omena" class="omenaKuva">
+                  </div>
+                  <div class="omena-kuva">
+                    <img src="img/omppu.jpg" alt="omena" class="omenaKuva">
+                  </div>
+                  <div class="omena-kuva">
+                    <img src="img/omppu.jpg" alt="omena" class="omenaKuva">
+                  </div>
+                  <div class="voittokerroin" id="omenat-voitto"></div>
+            </div>
+
+            
+
+            <div class="kirsikat">
+              <div class="kirsikka-kuva">
+                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+                </div>
+                <div class="kirsikka-kuva">
+                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+                </div>
+                <div class="kirsikka-kuva">
+                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+                </div>
+                <div class="voittokerroin" id="kirsikat-voitto"></div>
+          </div>
+
+          
+
+          <div class="banaanit">
+            <div class="banaani-kuva">
+                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+              </div>
+              <div class="banaani-kuva">
+                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+              </div>
+              <div class="banaani-kuva">
+                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+              </div>
+              <div class="voittokerroin" id="banaanit-voitto"></div>
+        </div>
+
+       
+
+        <div class="seiskat">
+          <div class="seiska-kuva">
+              <img src="img/seiska.png" alt="timantti" class="seiskaKuva">
+            </div>
+            <div class="seiska-kuva">
+              <img src="img/seiska.png" alt="timantti" class="seiskaKuva">
+            </div>
+            <div class="seiska-kuva">
+              <img src="img/seiska.png" alt="seiska" class="seiskaKuva">
+            </div>
+            <div class="voittokerroin" id="seiska-voitto"></div>
+      </div>
+    </section>   
 </body>
 </html>
