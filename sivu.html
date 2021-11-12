@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="ISO 8859-10">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tyyli.css">
+    <link rel="stylesheet" href="mobiili.css">
 </head>
 <body onload="paivitaKaikki()">
     <script src="peli.js"></script>
@@ -22,14 +24,17 @@
  
         <div class="hedelma-ruutu" >
             <img id="hedelma1" class ="hedelma" src="img/seiska.png" alt="hedelma">
+            <div id="lukittu-painike-1" class="lukittu-painike-1" onclick="toggle1()">Ei lukittu</div>
          </div>
  
         <div class="hedelma-ruutu">
             <img id="hedelma2" class ="hedelma" src="img/seiska.png" alt="hedelma">
+            <div id="lukittu-painike-2"  class="lukittu-painike-2" onclick="toggle2()">Ei lukittu</div>
          </div>
  
         <div class="hedelma-ruutu">
             <img id="hedelma3" class ="hedelma" src="img/seiska.png" alt="hedelma">
+            <div id="lukittu-painike-3" class="lukittu-painike-3" onclick="toggle3()">Ei lukittu</div>
          </div>
     </section>
  
@@ -43,17 +48,17 @@
     
     <section class="voitto-taulukko">
       <div class="voitto-otsikko">Mahdolliset voitot</div>
-            <div class="mansikat">
-                <div class="mansikka-kuva">
-                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+            <div class="banaanit">
+                <div class="banaani-kuva">
+                    <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
                   </div>
-                  <div class="mansikka-kuva">
-                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+                  <div class="banaani-kuva">
+                    <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
                   </div>
-                  <div class="mansikka-kuva">
-                    <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
+                  <div class="banaani-kuva">
+                    <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
                   </div> 
-                  <div class="voittokerroin" id="mansikat-voitto"></div>
+                  <div class="voittokerroin" id="banaanit-voitto"></div>
             </div>
                   
                  
@@ -74,48 +79,58 @@
 
             
 
-            <div class="kirsikat">
-              <div class="kirsikka-kuva">
-                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+            <div class="mansikat">
+              <div class="mansikka-kuva">
+                  <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
                 </div>
-                <div class="kirsikka-kuva">
-                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+                <div class="mansikka-kuva">
+                  <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
                 </div>
-                <div class="kirsikka-kuva">
-                  <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
+                <div class="mansikka-kuva">
+                  <img src="img/mansikka.png" alt="mansikka" class="mansikkaKuva">
                 </div>
-                <div class="voittokerroin" id="kirsikat-voitto"></div>
+                <div class="voittokerroin" id="mansikat-voitto"></div>
           </div>
 
           
 
-          <div class="banaanit">
-            <div class="banaani-kuva">
-                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+          <div class="kirsikka">
+            <div class="kirsikka-kuva">
+                <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
               </div>
-              <div class="banaani-kuva">
-                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+              <div class="kirsikka-kuva">
+                <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
               </div>
-              <div class="banaani-kuva">
-                <img src="img/banaani.jpg" alt="banaani" class="banaaniKuva">
+              <div class="kirsikka-kuva">
+                <img src="img/kirsikka.jpg" alt="kirsikka" class="kirsikkaKuva">
               </div>
-              <div class="voittokerroin" id="banaanit-voitto"></div>
+              <div class="voittokerroin" id="kirsikat-voitto"></div>
         </div>
 
        
 
         <div class="seiskat">
           <div class="seiska-kuva">
-              <img src="img/seiska.png" alt="timantti" class="seiskaKuva">
-            </div>
-            <div class="seiska-kuva">
-              <img src="img/seiska.png" alt="timantti" class="seiskaKuva">
+              <img src="img/seiska.png" alt="seiska" class="seiskaKuva">
             </div>
             <div class="seiska-kuva">
               <img src="img/seiska.png" alt="seiska" class="seiskaKuva">
             </div>
-            <div class="voittokerroin" id="seiska-voitto"></div>
+            <div class="seiska-kuva">
+              <img src="img/seiska.png" alt="seiska" class="seiskaKuva">
+            </div>
+            <div class="voittokerroin" id="seiskat-voitto"></div>
       </div>
-    </section>   
+
+      
+
+
+
+    </section>
+
+    
+
+  
+    
 </body>
 </html>
