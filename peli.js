@@ -1,6 +1,6 @@
 var pelikaynnissa = false;
-var panos = 0.5;
-var rahaa = 50;
+var panos = 1;
+var rahaa = 100;
 var maksimipanos = 10;
 var minimipanos = 0.5;
 
@@ -50,12 +50,12 @@ function paivitaHedelmat() {
 
 
 function paivitaRahat() {
-    document.getElementById("rahaa").innerHTML = "RAHAA: " + rahaa + "â??";
+    document.getElementById("rahaa").innerHTML = "RAHAA: " + rahaa + "&euro;";
 }
 
 
 function paivitaPanos() {
-    document.getElementById("panos").innerHTML = "PANOS: " + panos + "â??";
+    document.getElementById("panos").innerHTML = "PANOS: " + panos + "&euro;";
 }
 
 
