@@ -50,35 +50,35 @@ function pelaa() {
         setTimeout(() => {
             voitto = false;
             if (arpa1 == 1 && arpa2 == 1 && arpa3 == 1) {
-                alert("voitto: " + panos * 5 +"â??");
+                alert("voitto: " + panos * 5 +"&euro;");
                 rahaa += panos * 5;
                 paivitaRahat();
                 voitto = true;
             }
     
             if (arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
-                alert("voitto: " + panos * 5 +"â??");
+                alert("voitto: " + panos * 5 +"&euro;");
                 rahaa += panos * 5;
                 paivitaRahat();
                 voitto = true;
             }
     
             if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
-                alert("voitto: " + panos * 5 +"â??");
+                alert("voitto: " + panos * 5 +"&euro;");
                 rahaa += panos * 5;
                 paivitaRahat();
                 voitto = true;
             }
     
             if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
-                alert("voitto: " + panos * 50 + "â??");
+                alert("voitto: " + panos * 50 + "&euro;");
                 rahaa += panos * 50;
                 paivitaRahat();
                 voitto = true;
             }
     
             if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
-                alert("voitto: " + panos * 1000 +"â??");
+                alert("voitto: " + panos * 1000 +"&euro;");
                 rahaa += panos * 1000;
                 paivitaRahat();
                 voitto = true;
