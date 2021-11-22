@@ -51,7 +51,7 @@ function pelaa() {
             voitto = false;
             if (arpa1 == 1 && arpa2 == 1 && arpa3 == 1) {
                 alert("voitto: " + panos * 5 +"&euro;");
-                rahaa += panos * 5;
+                rahaa += panos * 2;
                 paivitaRahat();
                 voitto = true;
             }
@@ -65,7 +65,7 @@ function pelaa() {
     
             if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
                 alert("voitto: " + panos * 5 +"&euro;");
-                rahaa += panos * 5;
+                rahaa += panos * 10;
                 paivitaRahat();
                 voitto = true;
             }
@@ -134,19 +134,19 @@ function pyorita() {
     var arpa;
     randomNumero = arvo();
 
-    if (randomNumero <= 10) {
+    if (randomNumero <= 13) {
         arpa = 1;
     }
 
-    if (randomNumero > 10 && randomNumero <= 21) {
+    if (randomNumero > 13 && randomNumero <= 23) {
         arpa = 2;
     }
 
-    if (randomNumero > 21 && randomNumero <= 31) {
+    if (randomNumero > 23 && randomNumero <= 30) {
         arpa = 3;
     }
 
-    if (randomNumero > 31 && randomNumero <= 36) {
+    if (randomNumero > 30 && randomNumero <= 36) {
         arpa = 4;
     }
 
