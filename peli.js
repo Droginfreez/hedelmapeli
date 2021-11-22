@@ -3,11 +3,16 @@ var panos = 1;
 var rahaa = 100;
 var maksimipanos = 10;
 var minimipanos = 0.5;
+var arpa1 = 0;
+var arpa2 = 0;
+var arpa3 = 0;
+var randomNumero = 0;
 var voitto = false;
 var eiVoiLukita = true;
 var arpalukittu1 = false;
 var arpalukittu2 = false;
 var arpalukittu3 = false;
+
 
 
 
@@ -42,6 +47,45 @@ function pelaa() {
             paivitaHedelma("hedelma3", "img/nothing.png");
             setTimeout(() => { arpa3 = arvohedelma("hedelma3"); }, 1500); 
         }
+        setTimeout(() => {
+            voitto = false;
+            if (arpa1 == 1 && arpa2 == 1 && arpa3 == 1) {
+                alert("voitto: " + panos * 5 +"â??");
+                rahaa += panos * 5;
+                paivitaRahat();
+                voitto = true;
+            }
+    
+            if (arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
+                alert("voitto: " + panos * 5 +"â??");
+                rahaa += panos * 5;
+                paivitaRahat();
+                voitto = true;
+            }
+    
+            if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
+                alert("voitto: " + panos * 5 +"â??");
+                rahaa += panos * 5;
+                paivitaRahat();
+                voitto = true;
+            }
+    
+            if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
+                alert("voitto: " + panos * 50 + "â??");
+                rahaa += panos * 50;
+                paivitaRahat();
+                voitto = true;
+            }
+    
+            if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
+                alert("voitto: " + panos * 1000 +"â??");
+                rahaa += panos * 1000;
+                paivitaRahat();
+                voitto = true;
+            }
+
+
+        }, 1600);
     
       
         setTimeout(() => { pelikaynnissa = false;  paivitaKaikki();}, 2000);
