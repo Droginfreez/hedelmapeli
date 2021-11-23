@@ -56,28 +56,28 @@ function pelaa() {
                 voitto = true;
             }
     
-            else if(arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
+            if(arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
                 document.getElementById("voittomaara").innerHTML="voitto: " + panos * 5 +"&euro;";
                 rahaa += panos * 5;
                 paivitaRahat();
                 voitto = true;
             }
     
-            else if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
+            if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
                 document.getElementById("voittomaara").innerHTML="voitto: " + panos * 10 +"&euro;";
                 rahaa += panos * 10;
                 paivitaRahat();
                 voitto = true;
             }
     
-            else if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
+            if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
                 document.getElementById("voittomaara").innerHTML="voitto: " + panos * 50 +"&euro;";
                 rahaa += panos * 50;
                 paivitaRahat();
                 voitto = true;
             }
     
-           else if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
+           if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
                 document.getElementById("voittomaara").innerHTML="voitto: " + panos * 1000 +"&euro;";
                 rahaa += panos * 1000;
                 paivitaRahat();
