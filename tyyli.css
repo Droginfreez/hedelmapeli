@@ -35,6 +35,17 @@
     width: 100px;
     height: 100px;
 }
+.voitto {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--bordervari);
+    text-align: left;
+    width: 200px;
+    font-size:30px;
+    position:absolute;
+    top:45%;
+    margin-left:40%;
+}
 
 .rahat{
     padding-top: 10px;
@@ -104,7 +115,6 @@ top: 60%;
     cursor: pointer;
     user-select: none; 
 }
-
 
 
 .lukittu-painike-1{

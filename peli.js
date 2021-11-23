@@ -50,42 +50,45 @@ function pelaa() {
         setTimeout(() => {
             voitto = false;
             if (arpa1 == 1 && arpa2 == 1 && arpa3 == 1) {
-                alert("voitto: " + panos * 5 +"&euro;");
+                document.getElementById("voittomaara").innerHTML="voitto: " + panos * 2 +"&euro;";
                 rahaa += panos * 2;
                 paivitaRahat();
                 voitto = true;
             }
     
-            if (arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
-                alert("voitto: " + panos * 5 +"&euro;");
+            else if(arpa1 == 2 && arpa2 == 2 && arpa3 == 2) {
+                document.getElementById("voittomaara").innerHTML="voitto: " + panos * 5 +"&euro;";
                 rahaa += panos * 5;
                 paivitaRahat();
                 voitto = true;
             }
     
-            if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
-                alert("voitto: " + panos * 5 +"&euro;");
+            else if (arpa1 == 3 && arpa2 == 3 && arpa3 == 3) {
+                document.getElementById("voittomaara").innerHTML="voitto: " + panos * 10 +"&euro;";
                 rahaa += panos * 10;
                 paivitaRahat();
                 voitto = true;
             }
     
-            if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
-                alert("voitto: " + panos * 50 + "&euro;");
+            else if (arpa1 == 4 && arpa2 == 4 && arpa3 == 4) {
+                document.getElementById("voittomaara").innerHTML="voitto: " + panos * 50 +"&euro;";
                 rahaa += panos * 50;
                 paivitaRahat();
                 voitto = true;
             }
     
-            if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
-                alert("voitto: " + panos * 1000 +"&euro;");
+           else if (arpa1 == 5 && arpa2 == 5 && arpa3 == 5) {
+                document.getElementById("voittomaara").innerHTML="voitto: " + panos * 1000 +"&euro;";
                 rahaa += panos * 1000;
                 paivitaRahat();
                 voitto = true;
             }
+        
+            
 
 
         }, 1600);
+        document.getElementById("voittomaara").innerHTML="voitto: 0&euro;"
     
       
         setTimeout(() => { pelikaynnissa = false;  paivitaKaikki();}, 2000);
@@ -134,19 +137,19 @@ function pyorita() {
     var arpa;
     randomNumero = arvo();
 
-    if (randomNumero <= 13) {
+    if (randomNumero <= 15) {
         arpa = 1;
     }
 
-    if (randomNumero > 13 && randomNumero <= 23) {
+    if (randomNumero > 15 && randomNumero <= 25) {
         arpa = 2;
     }
 
-    if (randomNumero > 23 && randomNumero <= 30) {
+    if (randomNumero > 25 && randomNumero <= 32) {
         arpa = 3;
     }
 
-    if (randomNumero > 30 && randomNumero <= 36) {
+    if (randomNumero > 32 && randomNumero <= 36) {
         arpa = 4;
     }
 
